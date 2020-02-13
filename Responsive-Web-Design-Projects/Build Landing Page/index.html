@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>FCC - Product Landing Page</title>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img" src="./images/logo.png" alt="original trombones logo" width="164" height="29"/>
+        </div>
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how-it-works">How It Works</a></li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#pricing">Pricing</a></li>
+            </ul>
+          </div>
+        </nav>  
+      </header>
+
+      <div class="banner-section">
+        <div class="img-div" id="img-div">
+          <img class="image" src="./images/banner.jpg">
+          <div class="centered">
+            <div class="text-extra-big">Explore. Discover. Live<div>
+            <h5 class="text-extra-small">Yachts for sale &amp; charters</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <section id="features" class="sailing-section">
+          <div class="shell">
+            <div>
+              <h1 class="sail-heading">Sailing Yachts</h1>
+            </div>
+            <div>
+              <h5 class="sail-subheading">The sea with no restraints</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><h5>PRIVATE CHARTERS</h5><p>The best way to get the most out of your trip in an ocean is to order our Private Charter Package. This means you will have the boat only for your group (no other people on board) and you can really decide where to go.</p></div>
+            <div class="col-md-4"><h5>WEDDING CHARTERS</h5><p>The once in a lifetime event you have always dreamed about can become a reality if you choose to cruise on board any of our luxury yachts. With us you can be sure your wedding will be everything you have ever dreamed of.</p></div>
+            <div class="col-md-4"><h5>CORPORATE CHARTER</h5><p>We have numerous luxury yachts based across the world that are perfect for hosting corporate events. You may prefer a smaller motor or sail yacht for team-building charters, or you may wish to create a custom charter.</p></div>
+          </div>
+        </section>
+
+        <section id="how-it-works">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </section>
+        
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">Golden Odyssey</div>
+            <h2>€63,713,000</h2>
+            <ol>
+              <li><h6>Built: 2004, Royal Huisman Shipyard</h6></li>
+              <li><h6>Length: 90m (295.3ft)</h6></li>
+              <li><h6>Guests: 12</h6></li>
+            </ol>
+            <button class="btn">Buy</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Silver Fast</div>
+            <h2>€79,500,000</h2>
+            <ol>
+              <li><h6>Built: 2015, SilverYachts</h6></li>
+              <li><h6>Length: 77m (252.6ft)</h6></li>
+              <li><h6>Guests: 18</h6></li>
+            </ol>
+            <button class="btn">Buy</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Sarastar</div>
+            <h2>€47,000,000</h2>
+            <ol>
+              <li><h6>Built: 2004, Royal Huisman Shipyard</h6></li>
+              <li><h6>Length: 60.2m (197.6ft)</h6></li>
+              <li><h6>Guests: 12</h6></li>
+            </ol>
+            <button class="btn">Buy</button>
+          </div>
+        </section>
+
+        <section id="hero">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h2 class="subs-head">Subscribe Now & Save up to 10%</h2>
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+            <input id="submit" type="submit" value="Get Started" class="btn" />
+          </form>
+        </section>
+
+        <footer id="footer">
+          <p>2020 © <a href="https://github.com/supratim003/freecodecamp-projects" target="_blank">Supratim</a> / A FreeCodeCamp Project.</p>
+        </footer>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

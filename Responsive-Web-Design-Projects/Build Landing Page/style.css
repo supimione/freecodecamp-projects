@@ -1,0 +1,266 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+header {
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  background: rgba(22,88,139,.4);
+}
+.logo {
+  width: 50vw;
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+
+/*For image part*/ 
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.text-extra-big{
+  font-weight: 700;
+  font-size: 60px;
+}
+.text-extra-small{
+  font-size: 30px;
+}
+
+/*Sailling Yachts*/
+.sailing-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.shell{
+  text-align: center;
+  font-family: quicksand,Georgia,times new roman,Times,serif;
+  padding-bottom: 50px;
+}
+.sail-heading{
+  font-size: 3rem;
+}
+.sail-subheading{
+  font-size: 24px ;
+  text-transform: uppercase;
+}
+#features {
+  margin-top: 30px;
+  text-align: center;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+  #hero {
+    margin-top: 120px;
+  }
+}
+/*Video Section*/
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/*Pricing Section*/
+#pricing {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.product > h2 {
+  margin-top: 15px;
+}
+.product > ol {
+  margin: 15px 0;
+}
+.product > ol > li {
+  padding: 5px 0;
+}
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+h6{
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .logo > img {
+    margin: 0 auto;
+  }
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  .text-extra-big{
+    font-size: 25px !important;
+  }
+  .text-extra-small{
+    font-size: 15px !important;
+  }
+  #form {
+    display: block !important;
+    text-align: center !important;
+  }
+  #hero {
+    padding-left: 0px !important;
+  }
+  .centered {
+    top: 23% !important;
+  }
+  #hero input[type="email"] {
+    margin: 0px !important;
+  }
+}
+
+/*Email Section*/
+#hero {
+  padding-left: 110px;
+  margin: 80px 0 80px 0;
+}
+#form {
+  display: flex;
+}
+.subs-head{
+  margin: 5px 0;
+}
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  height: 40px;
+  margin: 0 60px;
+}
+#hero input[type="submit"] {
+  max-width: 150px;
+  height: 30px;
+  margin: 5px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+#hero input[type="submit"]:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+/*Footer Section*/
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+}
+#footer p {
+  font-size: 15px;
+  font-weight: 600;
+}
