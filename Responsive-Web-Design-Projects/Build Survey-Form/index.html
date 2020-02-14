@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>FCC : Survey Form</title>
+  </head>
+  <body>
+ 
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Customer Service Survey Form</h1>
+        <p id="description" class="description text-center">
+         Please take a moment to fill out this survey
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Customer Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Customer Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Customer Age</label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+        </div>
+        <div class="form-group">
+          <p>How easy is it to Navigate our service?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Very Difficult</option>
+            <option value="Difficult">Difficult</option>
+            <option value="Regular">Regular</option>
+            <option value="Easy">Easy</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>Important features we're missing?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Various type of service</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>Custom Response
+          </label>
+    
+          <label>
+            <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Navigation
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue"></span>
+          </p>
+    
+          <label>
+            <input  name="prefer"  value="front-end-projects"  type="checkbox"  class="input-checkbox"/>Quality
+          </label>
+          <label>
+            <input  name="prefer"  value="back-end-projects"  type="checkbox"  class="input-checkbox"/>Design
+          </label>
+          <label>
+            <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>Navigation
+          </label>
+        </div>
+    
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+       
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
