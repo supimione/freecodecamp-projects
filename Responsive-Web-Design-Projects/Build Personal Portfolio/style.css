@@ -1,0 +1,175 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}  
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; 
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4.2rem;
+}
+h3{
+  font-size: 20px;
+}
+a{
+  color: aliceblue;
+}
+
+header {
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  background: rgba(22,88,139,.4);
+}
+
+/* Welcome section */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  padding-top: 12%;
+}
+.heading1{
+    font-size: 2rem;
+}
+.heading3{
+    width: 60%;
+}
+@media (max-width: 650px) {
+  .welcome-section{
+    height: auto !important;
+  }
+  .heading3{
+      width: 100% !important;
+  }
+  .details {
+    width: 100% !important; 
+    padding-left: 0% !important;
+}
+}
+
+/* Projects section */
+section#projects {
+  background-image: url(http://dan.motiongear.org/images/foliobgd.png);
+}
+section#projects .container h1,
+section#projects .container h3 {
+  color: white;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.8);
+}
+.thumbnail {
+  padding: 0 0 15px 0;
+  margin: 15px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.5);
+}
+.thumbnail img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.thumbnail p {
+  color: #000;
+}
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+}
+
+/*Contact Section*/
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 65vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+} 
+.details {
+  width: 77%;
+  padding-left: 20%;
+}
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: #020c1b;
+  text-align: center;
+}
+footer > p {
+  margin: 1rem;
+  font-size: 16px;
+}
